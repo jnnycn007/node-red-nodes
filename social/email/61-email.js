@@ -556,7 +556,7 @@ module.exports = function (RED) {
                                     //console.log(" [X] - Nothing to fetch");
                                     if (imap.serverSupports && imap.serverSupports('IDLE')) {
                                         // IMAP IDLE
-                                        node.status({ fill: "green", shape: "dot", text: RED._("email.status.fetched", { number: "0" } )});
+                                        node.status({ fill: "green", shape: "ring", text: RED._("email.status.fetched", { number: "0" } )});
                                         node.statusErr = false;
                                         setStatusTimer();
                                     } else {
@@ -603,7 +603,7 @@ module.exports = function (RED) {
                                     var cleanup = function () {
                                         if (imap.serverSupports && imap.serverSupports('IDLE')) {
                                             // for IMAP IDLE, connection is expected to stay open
-                                            node.status({ fill: "green", shape: "dot", text: RED._("email.status.fetched", { number: results.length.toString() } )});
+                                            node.status({ fill: "green", shape: "ring", text: RED._("email.status.fetched", { number: results.length.toString() } )});
                                             node.statusErr = false;
                                             setStatusTimer();
                                         } else {
