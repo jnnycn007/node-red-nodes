@@ -1,6 +1,6 @@
 {
   "name": "node-red-node-pi-gpio",
-  "version": "2.0.6",
+  "version": "2.0.7",
   "description": "The basic Node-RED node for Pi GPIO",
   "dependencies"  : {
   },
@@ -17,7 +17,7 @@
   ],
   "author": {
       "name": "Dave Conway-Jones",
-      "email": "ceejay@vnet.ibm.com",
+      "email": "dceejay@gmail.com",
       "url": "http://nodered.org"
   },
   "license": "Apache-2.0",
